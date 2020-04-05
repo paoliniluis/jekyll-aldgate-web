@@ -1,0 +1,140 @@
+/*============  Search form  =============*/
+.sub-form .name,
+.sub-form .email
+{
+    font-size: 14px;
+    line-height: 18px;
+
+    position: relative;
+
+    display: inline-block;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    max-width: 189px;
+    height: 39px;
+    padding: 11px 0 10px 40px;
+
+    text-align: left;
+
+    color: #fff;
+    background: rgba(255, 255, 255, .27);
+}
+.sub-form .name:before,
+.sub-form .email:before
+{
+    position: absolute;
+    left: 14px;
+
+    width: 15px;
+    height: 15px;
+
+    content: '';
+}
+.sub-form .name:before
+{
+    background: url('../images/index_img15.png') no-repeat 0 1px;
+}
+.sub-form .email:before
+{
+    background: url('../images/index_img16.png') no-repeat 0 1px;
+}
+.sub-form input
+{
+    font: inherit;
+    line-height: inherit;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    vertical-align: baseline;
+
+    color: inherit;
+    border: none;
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0;
+    outline: none !important;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+
+    -webkit-appearance: none;
+}
+.sub-form .error,
+.sub-form .success
+{
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    -webkit-transition: all .3s ease-out;
+       -moz-transition: all .3s ease-out;
+         -o-transition: all .3s ease-out;
+            transition: all .3s ease-out;
+}
+.sub-form .error
+{
+    overflow: hidden;
+
+    height: 0;
+
+    color: #f00;
+}
+.sub-form .success
+{
+    display: none;
+
+    width: 300px;
+
+    color: #0f0;
+}
+.sub-form label.invalid .error
+{
+    height: 21px;
+}
+.sub-form a[data-type='submit']
+{
+    font-size: 14px;
+    line-height: 18px;
+
+    display: inline-block;
+
+    width: 95px;
+    max-width: 100%;
+    padding: 11px 0 10px;
+
+    color: #fff;
+    background: #113c73;
+}
+.sub-form a[data-type='submit']:hover
+{
+    background: #2e2e2e;
+}
+.sub-form .name + .email
+{
+    margin-left: 9px;
+}
+.sub-form .email + a[data-type='submit']
+{
+    margin-left: 2px;
+}
+@media (max-width: 767px)
+{
+    .sub-form .name,
+    .sub-form .email,
+    .sub-form a[data-type='submit']
+    {
+        display: block;
+
+        max-width: 100%;
+        margin: 20px 0 0!important;
+    }
+}

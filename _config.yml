@@ -1,0 +1,24 @@
+title: Aldgate Advisors
+tagline: >-
+  Proveemos servicios de administración de inversiones en la bolsa de valores de Argentina. 
+  Somos un grupo de profesionales altamente capacitados en optimizar portafolios de inversión considerando el riesgo que quiera asumir el cliente.
+email: info@aldagateadvisors.com
+author: Aldgate Advisors
+lang: es_AR
+description: >- # this means to ignore newlines until "baseurl:"
+  Gestión patrimonial integral | Inversiones
+baseurl: "/" 
+url: "https://www.aldgateadvisors.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+# SEO
+
+logo: assets/images/logo.png
+
+social:
+  name: Aldgate Advisors
+  links:
+    - https://www.linkedin.com/company/aldgate-advisors
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap

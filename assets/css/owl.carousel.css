@@ -1,0 +1,260 @@
+/*
+ * 	Core Owl Carousel CSS File
+ *	v1.3.3
+ */
+.owl-carousel .owl-wrapper:after
+{
+    line-height: 0;
+
+    display: block;
+    visibility: hidden;
+    clear: both;
+
+    height: 0;
+
+    content: '.';
+}
+.owl-carousel
+{
+    position: relative;
+
+    display: none;
+
+    width: 100%;
+
+    -ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper
+{
+    position: relative;
+
+    display: none;
+
+    -webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer
+{
+    position: relative;
+
+    overflow: hidden;
+
+    width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight
+{
+    -webkit-transition: height 500ms ease-in-out;
+       -moz-transition: height 500ms ease-in-out;
+         -o-transition: height 500ms ease-in-out;
+            transition: height 500ms ease-in-out;
+}
+.owl-carousel .owl-item
+{
+    float: left;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div
+{
+    cursor: pointer;
+}
+.owl-controls
+{
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+     -khtml-user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* mouse grab icon */
+.grabbing
+{
+    cursor: url(../images/grabbing.png) 8 8, move;
+}
+/* fix */
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+
+    -webkit-backface-visibility: hidden;
+       -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+}
+.pagination .owl-controls .owl-pagination
+{
+    display: inline-block;
+}
+.pagination .owl-controls .owl-pagination .owl-page
+{
+    line-height: 14px;
+
+    float: left;
+
+    width: 14px;
+    height: 14px;
+
+    -webkit-border-radius: 7px;
+       -moz-border-radius: 7px;
+            border-radius: 7px;
+    background-color: #fff;
+}
+.pagination .owl-controls .owl-pagination .owl-page:hover,
+.pagination .owl-controls .owl-pagination .owl-page.active
+{
+    background-color: #000;
+}
+.pagination .owl-controls .owl-pagination .owl-page + .owl-page
+{
+    margin-left: 7px;
+}
+.pagination .owl-controls .owl-pagination:before,
+.pagination .owl-controls .owl-pagination:after
+{
+    display: table;
+
+    content: ' ';
+}
+.pagination .owl-controls .owl-pagination:after
+{
+    clear: both;
+}
+#owl2 .owl-controls
+{
+    right: 0;
+    left: 0;
+
+    width: 1170px;
+    margin: 0 auto;
+}
+#owl2 .owl-controls .owl-buttons
+{
+    font: 400 28px 'FontAwesome';
+    line-height: 16px;
+
+    position: absolute;
+    z-index: 8;
+    top: 50%;
+    right: 0;
+    left: 0;
+}
+#owl2 .owl-controls .owl-buttons .owl-next,
+#owl2 .owl-controls .owl-buttons .owl-prev
+{
+    line-height: 16px;
+
+    position: absolute;
+    bottom: 0;
+
+    display: inline-block;
+
+    width: 10px;
+    max-width: 100%;
+    padding: 0 0;
+
+    cursor: pointer;
+    text-align: center;
+
+    color: #5a5a5a;
+}
+#owl2 .owl-controls .owl-buttons .owl-next:hover,
+#owl2 .owl-controls .owl-buttons .owl-prev:hover,
+#owl2 .owl-controls .owl-buttons .owl-next.active,
+#owl2 .owl-controls .owl-buttons .owl-prev.active
+{
+    color: #f09e0e;
+}
+#owl2 .owl-controls .owl-buttons .owl-prev
+{
+    left: 0;
+}
+#owl2 .owl-controls .owl-buttons .owl-prev:before
+{
+    content: '\f104';
+}
+#owl2 .owl-controls .owl-buttons .owl-next
+{
+    right: 0;
+}
+#owl2 .owl-controls .owl-buttons .owl-next:before
+{
+    content: '\f105';
+}
+#owl2 .owl-controls .owl-buttons .owl-prev + .owl-next
+{
+    margin-left: 3px;
+}
+#owl2 .owl-wrapper-outer
+{
+    position: relative;
+    z-index: 1;
+}
+#owl2 .owl-controls
+{
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+}
+#owl
+{
+    margin-top: -111px;
+}
+#owl .owl-controls .owl-pagination
+{
+    display: inline-block;
+}
+#owl .owl-controls .owl-pagination .owl-page
+{
+    line-height: 14px;
+
+    float: left;
+
+    width: 14px;
+    height: 14px;
+
+    -webkit-border-radius: 7px;
+       -moz-border-radius: 7px;
+            border-radius: 7px;
+    background-color: #fff;
+}
+#owl .owl-controls .owl-pagination .owl-page:hover,
+#owl .owl-controls .owl-pagination .owl-page.active
+{
+    background-color: #000;
+}
+#owl .owl-controls .owl-pagination .owl-page + .owl-page
+{
+    margin-left: 7px;
+}
+#owl .owl-controls .owl-pagination:before,
+#owl .owl-controls .owl-pagination:after
+{
+    display: table;
+
+    content: ' ';
+}
+#owl .owl-controls .owl-pagination:after
+{
+    clear: both;
+}
+@media (max-width: 767px)
+{
+    #owl
+    {
+        margin-top: 30px;
+    }
+}
+.owl-controls
+{
+    position: absolute;
+    bottom: 10px;
+    left: 68px;
+}
+.owl-controls .owl-pagination
+{
+    padding: 26px 0 19px;
+}
